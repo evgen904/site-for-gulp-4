@@ -4,6 +4,9 @@ let preprocessor = 'sass';
 // Определяем константы Gulp
 const { src, dest, parallel, series, watch } = require('gulp');
 
+// Конвертация картинок в webp
+const webp = require('gulp-webp');
+
 // Подключаем Browsersync
 const browserSync = require('browser-sync').create();
 
@@ -68,6 +71,7 @@ function images() {
 	return src('app/images/src/**/*') // Берём все изображения из папки источника
 	.pipe(newer('app/images/dest/')) // Проверяем, было ли изменено (сжато) изображение ранее
 	.pipe(imagemin()) // Сжимаем и оптимизируем изображеня
+	.pipe(webp())
 	.pipe(dest('app/images/dest/')) // Выгружаем оптимизированные изображения в папку назначения
 }
 
