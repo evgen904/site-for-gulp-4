@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="charset">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="msapplication-TileColor" content="#12A0FF">
+    <meta name="theme-color" content="#12A0FF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#12A0FF">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="dist/css/styles.min.css">
+	
+</head>
+
+<body >
+<div id="overlay"></div>
+<div id="page">
+    <header id="header">
+        <div class="container">
+            <nav>
+                <ul id="menu" class="flex fac">
+                    <li data-menuanchor="screen-hero" class="logo no-indicator">
+                        <a href="#screen-hero" class="logo-link" rel="home" itemprop="url">
+                            <img src="<?php echo URL; ?>images/logo.svg" alt="<?php echo get_bloginfo( 'name' ); ?>">
+                        </a>
+                    </li>
+                    <li data-menuanchor="screen-services"><a href="#screen-services">Услуги</a></li>
+                    <li data-menuanchor="screen-projects"><a href="#screen-projects">Проекты</a></li>
+                    <li data-menuanchor="screen-video"><a href="#screen-video">Видео</a></li>
+                    <li data-menuanchor="screen-team"><a href="#screen-team">Команда</a></li>
+                    <li data-menuanchor="screen-team-1" class="hidden"><a href="#screen-team-1">Команда</a></li>
+                    <li data-menuanchor="screen-team-slider" class="hidden"><a href="#screen-team-slider">Команда</a></li>
+                    <li data-menuanchor="screen-contacts"><a href="#screen-contacts">Контакты</a></li>
+                </ul>
+                <span class="indicator"></span>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="main-holder">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="home-fullpage">
+        <section id="hero" class="fullpage-section">
+            <div class="fp-bg" style="background-image: url('<?php echo $pf['background_image']['url'] ?>');">
+            </div>
+            <figure class="main-image">
+                <img src="<?php echo $pf['main_image']['url']; ?>" alt="<?php echo $pf['main_image']['alt']; ?>">
+            </figure>
+            <div class="content flex fae fjc">
+                <div class="holder">
+                    <div class="container">
+                        <div class="areas flex fjb fac">
+                            <div class="flex fjb fac">
+                                <h1><?php echo $pf['h_title']; ?></h1>
+                                <div class="logo">
+                                    <img src="<?php echo URL; ?>images/hero-logo.svg" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="bottom-gap"></span>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="fullpage-section">
+            <div class="bg">
+                <img src="<?php echo URL; ?>images/services-bg.png" alt="bg">
+            </div>
+            <div class="content">
+                <div class="container">
+
+                    <div class="areas flex fjb">
+                        <div class="left">
+                            <figure>
+                                <img src="<?php echo $pf['left_part_image']['url']; ?>"
+                                     alt="<?php echo $pf['left_part_image']['alt']; ?>">
+                            </figure>
+                        </div>
+                        <div class="right">
+                            <div class="desc">
+                                <h2><?php echo str_replace( ' | ', '<br>', $pf['left_part_title'] ); ?></h2>
+                                <div class="wys">
+									<?php echo $pf['left_part_description']; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="areas flex fjb">
+                        <div class="left">
+                            <div class="desc">
+                                <h2><?php echo str_replace( ' | ', '<br>', $pf['right_part_title'] ); ?></h2>
+                                <div class="wys">
+									<?php echo $pf['right_part_description']; ?>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="fullpage-section">
+            <div class="content">
+                <div class="projects-slider">
+                    <div class="swiper-wrapper">
+						<?php foreach ( $pf['slides'] as $k => $slide ): ?>
+                            <div class="swiper-slide">
+                                <div class="container sh-cont">
+                                    <div class="arrows flex fac">
+                                        <button class="arrow arrow-left"></button>
+                                        <p class="counter">
+                                            <span class="current">1</span>
+                                            <span>/</span>
+                                            <span class="all"><?php echo sizeof( $pf['slides'] ); ?></span>
+                                        </p>
+                                        <button class="arrow arrow-right"></button>
+                                    </div>
+                                    <div class="areas flex fjb slide-<?php echo $k + 1; ?>">
+                                        <div class="left">
+                                            <div class="slide-content swiper-no-swiping">
+                                                <h2><?php echo str_replace( ' | ', '<br>', $slide['p_title'] ); ?></h2>
+                                                <div class="desc">
+                                                    <div><?php echo $slide['p_description']; ?></div>
+                                                </div>
+	                                            <?php if ( $slide['pdf'] ): ?>
+                                                    <div class="pdf-link">
+                                                        <a href="<?php echo $slide['pdf']; ?>" target="_blank">Благодарственное письмо</a>
+                                                    </div>
+	                                            <?php endif; ?>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <figure>
+                                                <img src="<?php echo $slide['p_left_image']['url']; ?>"
+                                                     alt="<?php echo $slide['p_left_image']['alt']; ?>">
+                                            </figure>
+                                        </div>
+                                    </div>
+									<?php if ( $slide['steps'] ): ?>
+                                        <div class="timeline-block">
+                                            <h3><?php echo $slide['steps_title']; ?></h3>
+                                            <ul class="timeline flex">
+												<?php foreach ( $slide['steps'] as $step ): ?>
+                                                    <li class="flex fdc <?php echo $step['link'] ? 'has-link' : ''; ?>">
+                                                        <span class="gap"></span>
+														<?php if ( $step['link'] ): ?>
+                                                        <a class="item-text swiper-no-swiping"
+                                                           href="<?php echo $step['link']; ?>">
+															<?php else: ?>
+                                                            <span class="item-text swiper-no-swiping">
+	                                                    <?php endif; ?>
+
+                                                            <span>
+                                                                <?php echo $step['step_name']; ?>
+                                                            </span>
+                                                        <?php if ( $step['link'] ): ?>
+                                                        </a>
+													<?php else: ?>
+                                                        </span>
+													<?php endif; ?>
+                                                    </li>
+												<?php endforeach; ?>
+                                            </ul>
+                                        </div>
+									<?php endif; ?>
+                                </div>
+                            </div>
+						<?php endforeach; ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="video" class="fullpage-section">
+            <div class="content">
+                <div class="videos-slider">
+                    <div class="swiper-wrapper">
+						<?php foreach ( $pf['videos'] as $video ):
+							$poster = $video['preview_image'] ? ' poster="' . $video['preview_image'] . '"' : '';
+							?>
+                            <div class="swiper-slide">
+                                <div class="video-holder">
+                                    <div class="video">
+										<?php echo do_shortcode( '[video src="' . $video['video'] . '"' . $poster . ']' ); ?>
+                                    </div>
+                                    <h4 class="video-title tac hidden"><?php echo $video['text']; ?></h4>
+                                </div>
+                            </div>
+						<?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="slide-titles rel">
+                    <div>
+                        <h3 class="slide-title tac active"><?php echo $pf['videos'][0]['text']; ?></h3>
+                        <h3 class="slide-title tac"><?php echo $pf['videos'][1]['text']; ?></h3>
+                    </div>
+                </div>
+                <div class="videos-pagination flex fac fjc"></div>
+            </div>
+        </section>
+	
+            <section id="team2" class="fullpage-section team-section">
+                <div class="fp-bg"
+                     style="background-image: url('<?php echo $pf['t_background_image']['url'] ?>');"></div>
+                <div class="content">
+                    <div class="container">
+
+                        <div class="person flex fac odd">
+                            <figure>
+                                <img src="https://evgen904.github.io/images/dest/command-1.webp"
+                                     alt="">
+                            </figure>
+                            <div class="info">
+                                <h2>Имя</h2>
+                                <p class="greeting"><span class="red"></span></p>
+                                <div class="bio">
+                                    <p class="short"><span class="red"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+ <section id="team1>" class="fullpage-section team-section">
+                <div class="fp-bg"
+                     style="background-image: url('<?php echo $pf['t_background_image']['url'] ?>');"></div>
+                <div class="content">
+                    <div class="container">
+
+                        <div class="person flex fac even">
+                            <figure>
+                                <img src="https://evgen904.github.io/images/dest/command-2.webp"
+                                     alt="">
+                            </figure>
+                            <div class="info">
+                                <h2>Имя</h2>
+                                <p class="greeting"><span class="red"></span></p>
+                                <div class="bio">
+                                    <p class="short"><span class="red"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <section id="team-1" class="fullpage-section team-slider-section">
+                <div class="fp-bg"
+                     style="background-image: url('<?php echo $pf['t_background_image']['url'] ?>');"></div>
+                <div class="content">
+                    <div class="container">
+                        <div class="persons-slider">
+                            <div class="swiper-wrapper">
+								<?php foreach ( $pf['persons_slider'] as $p_item ): ?>
+                                    <div class="swiper-slide">
+                                        <div class="person">
+                                            <figure>
+												<?php if ( $p_item['photo'] ): ?>
+                                                    <img src="<?php echo $p_item['photo']['url']; ?>"
+                                                         alt="<?php echo $p_item['photo']['alt']; ?>">
+												<?php endif; ?>
+                                            </figure>
+                                            <div class="info">
+                                                <h4 class="swiper-no-swiping"><?php echo $p_item['name']; ?></h4>
+                                                <p class="swiper-no-swiping"><?php echo $p_item['position']; ?></p>
+                                            </div>
+                                        </div>
+                                    </div>
+								<?php endforeach; ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+        <section id="contacts" class="fullpage-section">
+            <div class="content">
+                <div class="container">
+                    <div class="areas flex">
+                        <div class="left">
+                            <div>
+                                <a class="pdf-icon link-areas" href="<?php echo $pf['presentation_pdf']; ?>"
+                                   target="_blank"
+                                   download>
+                                    <figure class="ico">
+                                        <img src="<?php echo URL; ?>images/pdf.svg" alt="download pdf">
+                                    </figure>
+                                    <span><?php echo $pf['presentation_text']; ?></span>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="partner link-areas" href="<?php echo $pf['partner_url']; ?>" target="_blank">
+                                    <figure class="ico">
+                                        <img src="<?php echo $pf['partner_logo']['url']; ?>"
+                                             alt="<?php echo $pf['partner_logo']['alt']; ?>">
+                                    </figure>
+                                    <span><?php echo $pf['partner_name']; ?></span>
+                                </a>
+                            </div>
+
+							<?php if ( $phones = $pf['phone_numbers'] ): ?>
+                                <div>
+                                    <ul class="phones">
+										<?php foreach ( $phones as $phone ): ?>
+                                            <li>
+                                                <a href="tel:<?php echo $phone['phone_number']; ?>"><?php echo $phone['phone_number']; ?></a>
+                                            </li>
+										<?php endforeach; ?>
+                                    </ul>
+                                </div>
+							<?php endif; ?>
+							<?php if ( $email = $pf['email'] ): ?>
+                                <div>
+                                    <ul class="email">
+                                        <li>
+                                            <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+                                        </li>
+                                    </ul>
+                                </div>
+							<?php endif; ?>
+                            <div>
+                                <ul class="socials flex fac">
+									<?php if ( $fb = $pf['facebook'] ): ?>
+                                        <li>
+                                            <a href="<?php echo $fb; ?>" target="_blank">
+                                                <img src="<?php echo URL; ?>images/facebook.svg" alt="facebook">
+                                            </a>
+                                        </li>
+									<?php endif; ?>
+									<?php if ( $yt = $pf['youtube'] ): ?>
+                                        <li>
+                                            <a href="<?php echo $yt; ?>" target="_blank">
+                                                <img src="<?php echo URL; ?>images/youtube.svg" alt="youtube">
+                                            </a>
+                                        </li>
+									<?php endif; ?>
+									<?php if ( $li = $pf['linkedin'] ): ?>
+                                        <li>
+                                            <a href="<?php echo $li; ?>" target="_blank">
+                                                <img src="<?php echo URL; ?>images/linkedin.svg" alt="linkedin">
+                                            </a>
+                                        </li>
+									<?php endif; ?>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <figure>
+                                <img src="<?php echo URL; ?>images/logo-big.svg" alt="OSOKINS PROJECT DELIVERY">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer flex fac fjc tac">
+                    <p>
+                        <span>Copyright © <?php echo date( 'Y' ); ?> OSOKINS Project Delivery</span>
+                        <br>
+                        <span>All Rights Reserved</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--#holder-holder-->
+</main>
+<footer id="footer">
+    
+</footer>
+
+</div><!-- #page -->
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="dist/js/jquery-1.10.2.min.js"></script>
+
+
+
+
+	<script src="dist/js/main.min.js"></script>
+
+
+</body>
+</html>

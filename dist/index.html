@@ -15,14 +15,16 @@
 <div class="site-wrap">
 	<header class="site-header">
 		<div class="site-header-inner site-inner">
-			<a class="js-main-slide" href="#main"><img src="images/dest/logo.svg" alt=""></a>
+			<a class="js-main-slide" data-menuanchor="screen-hero" href="#screen-hero"><img src="images/dest/logo.svg" alt=""></a>
 			<nav class="js-menu-header">
-				<ul>
-					<li><a href="#services">Услуги</a></li>
-					<li><a href="#projects">Проекты </a></li>
-					<li><a href="#video">Видео</a></li>
-					<li><a href="#command">Команда</a></li>
-					<li><a href="#contacts">Контакты</a></li>
+				<ul id="menu">
+					<li data-menuanchor="screen-services"><a href="#screen-services">Услуги</a></li>
+                    <li data-menuanchor="screen-projects"><a href="#screen-projects">Проекты</a></li>
+                    <li data-menuanchor="screen-video"><a href="#screen-video">новости</a></li>
+                    <li data-menuanchor="screen-team" class="link-1 comand-li"><a href="#screen-team">Команда</a></li>
+                    <li data-menuanchor="screen-team-1" class="link-2 hidden"><a href="#screen-team-1">Команда</a></li>
+                    <li data-menuanchor="screen-team-slider" class="link-3 hidden"><a href="#screen-team-slider">Команда</a></li>
+                    <li data-menuanchor="screen-contacts"><a href="#screen-contacts">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>		
@@ -31,24 +33,24 @@
 		</div>
 	</header>
 
-	<div class="tab_content active" id="main">
-		<div class="block-main main">
-			<span class="main-img">
-				<img src="images/dest/command.webp" alt="" data-s3-animator="zoomIn d4">
-				<span class="about-site">
-					<span class="site-desk" data-s3-animator="fadeInLeft">
-						КОМАНДА ИНТЕРИМ-МЕНЕДЖЕРОВ <br>СДЕЛАЕТ ВАШ ПРОЕКТ УСПЕШНЫМ
+	<div id="home-fullpage">
+		<section class="fullpage-section" id="hero">
+			<div class="block-main main">
+				<span class="main-img">
+					<img src="images/dest/command.webp" alt="" data-s3-animator="zoomIn d4">
+					<span class="about-site">
+						<span class="site-desk" data-s3-animator="fadeInLeft">
+							КОМАНДА ИНТЕРИМ-МЕНЕДЖЕРОВ <br>СДЕЛАЕТ ВАШ ПРОЕКТ УСПЕШНЫМ
+						</span>
+						<span class="site-logo" data-s3-animator="fadeInRight">
+							<img src="images/dest/logo-main.svg" alt="">
+						</span>
 					</span>
-					<span class="site-logo" data-s3-animator="fadeInRight">
-						<img src="images/dest/logo-main.svg" alt="">
-					</span>
-				</span>
-			</span>	
-		</div>		
-	</div>
-
-	<div class="tab_content" id="services">
-		<div class="block-main services">
+				</span>	
+			</div>		
+		</section>
+		<section class="fullpage-section" id="services">
+			<div class="block-main services">
 			<div class="site-inner">
 				<div class="block-1">
 					<div class="block-1--left">
@@ -99,447 +101,394 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="tab_content" id="projects">
-		<div class="block-main projects">
-			<div class="block-projects site-inner">
-				<div class="block-projects--nav">
-					<div>
-						Реализованные проекты
+		</section>
+		<section class="fullpage-section" id="projects">
+			<div class="block-main projects">
+				<div class="block-projects site-inner">
+					<div class="block-projects--nav">
+						<div>
+							Реализованные проекты
+						</div>
+						<div>
+							<button class="prev js-prev-slide"></button>
+							<div class="counter js-counter-slide"></div>
+							<button class="next js-next-slide"></button>
+						</div>					
 					</div>
-					<div>
-						<button class="prev js-prev-slide"></button>
-						<div class="counter js-counter-slide"></div>
-						<button class="next js-next-slide"></button>
-					</div>					
-				</div>
-				<div class="owl-carousel js-projects">
-					<div class="block-projects--slide">
-						<div class="block-projects--cen">
-							<div class="block-projects--name">
-								Tashkent City
-							</div>
-							<div class="block-projects--desk">
-								Ташкент, Узбекистан. Международный бизнес-центр. <br>
-		Проект развития территории в 80 га.<br>
-		Заказчик: Дирекция Tashkent City при Кабинете Министров Республики Узбекистан.
-							</div>
-							<div class="block-projects--link">
-								<a href="#">Благодарственное письмо</a>
-							</div>
-							<div class="block-projects--img bg-1"></div>
-						</div>
-						<div class="block-projects--bot">
-							<div class="block-projects--title">
-								решения 
-							</div>
-							<div class="block-projects--line line-1">
-								<div data-text="Запуск проекта"></div>
-								<div data-text="Коммерческая концепция"></div>
-								<div data-text="Бизнес процессы"></div>
-								<div data-text="Тендеры и контракты"></div>
-								<div data-text="Инвестиционная программа"></div>
-								<div data-text="Обучение команды заказчика"></div>
-							</div>
-						</div>
-					</div>
-					<div class="block-projects--slide">
-						<div class="block-projects--cen">
-							<div class="block-projects--name">
-								ПИК МЕБЕЛЬ
-							</div>
-							<div class="block-projects--desk">
-								Москва, Россия. <br>
-								Запуск бизнес направления<br>
-								по оснащению новых квартир мебелью и бытовой техникой.<br>
-								Старт продаж состоялся в 2021г.<br>
-								Заказчик: ГК ПИК
-							</div>
-							<div class="block-projects--img bg-2"></div>
-						</div>
-						<div class="block-projects--bot">
-							<div class="block-projects--title">
-								решения 
-							</div>
-							<div class="block-projects--line line-2">
-								<div data-text="Управление проектом"></div>
-								<div data-text="Бизнес план"></div>
-								<div data-text="Бизнес процессы"></div>
-								<div data-text="Тендеры и контракты"></div>
-								<div data-text="Запуск операционной системы"></div>
-								<div data-text="IT Решения"></div>
-							</div>
-						</div>
-					</div>
-				</div>						
-			</div>
-		</div>
-	</div>
-
-	<div class="tab_content" id="video">
-		<div class="block-main video">
-			<div class="block-video">
-				 
-				<div class="video-slider js-video-slider">
-					<div class="video-slider--item">
-						<div class="video-slider--youtube">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/uoPBbjOEU4U?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-						<div class="video-slider--text">
-							Отчетная сессия по запуску проекта ПИК Мебель
-						</div>
-					</div>
-					<div class="video-slider--item">
-						<div class="video-slider--youtube">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/48ocjN4ROv4?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-						<div class="video-slider--text">
-							Отчетная сессия по запуску проекта ПИК Мебель
-						</div>
-					</div>
-					<div class="video-slider--item">
-						<div class="video-slider--youtube">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/Lm5eh5-RAzI?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-						<div class="video-slider--text">
-							Отчетная сессия по запуску проекта ПИК Мебель
-						</div>
-					</div>
-					<div class="video-slider--item">
-						<div class="video-slider--youtube">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/7vblrrwqyH0?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-						<div class="video-slider--text">
-							Отчетная сессия по запуску проекта ПИК Мебель
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<div class="tab_content" id="command">
-		<div class="block-main command">
-			<div id="fullpage">
-				<div class="section" id="section0">
-					<div class="block-contact-1-mobile">
-						<div class="foto">
-							<div class="left">
-								<img src="images/dest/command-1.webp" alt="">
-							</div>
-							<div class="right">
-								<div class="name">
-									Роман <br>Осокин
+					<div class="owl-carousel js-projects">
+						<div class="block-projects--slide">
+							<div class="block-projects--cen">
+								<div class="block-projects--name">
+									Tashkent City
 								</div>
-								<div class="job">
-									Управляющий партнер OSOKIN<span>S</span> Project Delivery
+								<div class="block-projects--desk">
+									Ташкент, Узбекистан. Международный бизнес-центр. <br>
+			Проект развития территории в 80 га.<br>
+			Заказчик: Дирекция Tashkent City при Кабинете Министров Республики Узбекистан.
+								</div>
+								<div class="block-projects--link">
+									<a href="#">Благодарственное письмо</a>
+								</div>
+								<div class="block-projects--img bg-1">
+									<img src="images/dest/city-1.webp" alt="">
+								</div>
+							</div>
+							<div class="block-projects--bot">
+								<div class="block-projects--title">
+									решения 
+								</div>
+								<div class="block-projects--line line-1">
+									<div data-text="Запуск проекта"></div>
+									<div data-text="Коммерческая концепция"></div>
+									<div data-text="Бизнес процессы"></div>
+									<div data-text="Тендеры и контракты"></div>
+									<div data-text="Инвестиционная программа"></div>
+									<div data-text="Обучение команды заказчика"></div>
 								</div>
 							</div>
 						</div>
-						<div class="desk">
-							OSOKINS – это Osokin, <span style="color: #c00;">S</span>okolova и партнеры.
-Мы предлагаем уникальный сервис: глубокая интеграция нашей экспертной команды в структуру Заказчика на период запуска проекта.
-
-						</div>
-					</div>
-					<div class="block-contact-1-mobile">
-						<div class="foto reverse">
-							<div class="left">
-								<img src="images/dest/command-2.webp" alt="">
-							</div>
-							<div class="right">
-								<div class="name">
-									Светлана <br>Соколова
+						<div class="block-projects--slide">
+							<div class="block-projects--cen">
+								<div class="block-projects--name">
+									ПИК МЕБЕЛЬ
 								</div>
-								<div class="job">
-									Старший партнер OSOKIN <span style="color: #c00;">S</span>Project Delivery
+								<div class="block-projects--desk">
+									Москва, Россия. <br>
+									Запуск бизнес направления<br>
+									по оснащению новых квартир мебелью и бытовой техникой.<br>
+									Старт продаж состоялся в 2021г.<br>
+									Заказчик: ГК ПИК
 								</div>
+								<div class="block-projects--img bg-2"></div>
 							</div>
-						</div>
-						<div class="desk">
-							Мы – управленцы. Наш бизнес – не давать
-советы как управлять проектами или повысить эффективность существующих организаций,
-наш бизнес – запустить проект «с нуля», наладить операционную систему и передать Заказчику надежно работающий механизм.
-						</div>
-					</div>
-					<div class="block-contact-1">
-						<div class="block-contact-1--img">
-							<div class="img">
-								<img src="images/dest/command-1.webp" alt="">
-							</div>
-						</div>
-						<div class="block-contact-1--text">
-							<div class="block-contact-1--title">
-								Роман Осокин
-							</div>
-							<div class="block-contact-1--desk">
-								<p>
-									Привет. Я – Роман Осокин, управляющий <br> партнер OSOKIN<span style="color: #c00;">S</span>  Project Delivery
-								</p>
-								<p>
-									Больше 25 лет я управляю проектами, из них 17 лет в США. 
-								</p>
-								<p>		
-									OSOKINS – это Osokin, <span style="color: #c00;">S</span>okolova и партнеры. Мы предлагаем уникальный сервис: глубокая интеграция нашей экспертной команды в структуру Заказчика на период запуска проекта.
-								</p>		
-								<p>
-									Мы применяем подходы американской школы проектного менеджмента с учетом многолетнего опыта в России и СНГ.   <br>
-									Мой основной опыт: стройка и ритейл, но в последнее время OSOKINS всё больше предлагает решения для запуска новых бизнес направлений и новых продуктов в других индустриях.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="section" id="section1">
-					<div class="block-contact-1 block-contact-2">
-						<div class="block-contact-1--img">
-							<div class="img">
-								<img src="images/dest/command-2.webp" alt="">
-							</div>
-						</div>
-						<div class="block-contact-1--text">
-							<div class="block-contact-1--title">
-								Светлана Соколова
-							</div>
-							<div class="block-contact-1--desk">
-								<p>
-									Здравствуйте, меня зовут Светлана Соколова. Я – старший Партнер OSOKIN<span style="color: #c00;">S</span>
-								</p>
-								<p>
-									Мой экспертный опыт в финансовой оценке инвестиционной деятельности более 18 лет.
-								</p>
-								<p>		
-									Мы – управленцы. Наш бизнес – не давать советы
-			как управлять проектами или повысить эффективность существующих организаций, наш бизнес – запустить проект «с нуля», наладить операционную систему
-			и передать Заказчику надежно работающий механизм. Это может быть, как новый бизнес юнит, так и новый офис управления проектом. 
-								</p>		
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="section" id="section2">
-					<div class="block-command site-inner s3-animator-zoomIn s3-animator-d4 js-slider-command-mobile">
-						<div class="command">
-							<div class="command--img">
-								<img src="images/dest/img-1.webp" alt="">
-							</div>
-							<div class="command--title">
-								Полина Смушко
-							</div>
-							<div class="command--hint">
-								Проектный контролер
-							</div>
-						</div>
-						<div class="command">
-							<div class="command--img">
-								<img src="images/dest/img-2.webp" alt="">
-							</div>
-							<div class="command--title">
-								Демьян Кислинский
-							</div>
-							<div class="command--hint">
-								Лидер направления 
-							</div>
-						</div>
-						<div class="command">
-							<div class="command--img">
-								<img src="images/dest/img-3.webp" alt="">
-							</div>
-							<div class="command--title">
-								Анастасия Савинова
-							</div>
-							<div class="command--hint">
-								Проектный Контролер
-							</div>
-						</div>
-						<div class="command">
-							<div class="command--img">
-								<img src="images/dest/img-4.webp" alt="">
-							</div>
-							<div class="command--title">
-								Юрий Микула
-							</div>
-							<div class="command--hint">
-								Менеджер проекта
-							</div>
-						</div>
-						<div class="command">
-							<div class="command--img">
-								<img src="images/dest/img-5.webp" alt="">
-							</div>
-							<div class="command--title">
-								Юлия Тихомирова
-							</div>
-							<div class="command--hint">
-								Ведущий архитектор
-							</div>
-						</div>
-						<div class="command">
-							<div class="command--img">
-								<img src="images/dest/img-6.webp" alt="">
-							</div>
-							<div class="command--title">
-								Вазген Седракян
-							</div>
-							<div class="command--hint">
-								Лидер направления
-							</div>
-						</div>
-						<div class="command">
-							<div class="command--img">
-								<img src="images/dest/img-7.webp" alt="">
-							</div>
-							<div class="command--title">
-								Евгения Чулкова
-							</div>
-							<div class="command--hint">
-								Эксперт по коммунникациям
-							</div>
-						</div>
-						<div class="command">
-							<div class="command--img">
-								<img src="images/dest/img-8.webp" alt="">
-							</div>
-							<div class="command--title">
-								Марина Буина
-							</div>
-							<div class="command--hint">
-								Эксперт по планированию
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="section" id="section3">
-					<div class="block-main contacts">
-						<div class="block-contacts site-inner">
-							<div class="block-contacts--left">
-								<div class="block-contacts--download">
-									<a href="#">
-										<span>
-											<img src="images/dest/ico-pdf.svg" alt="">
-										</span>
-										<span>
-											Скачать<br>презентацию
-										</span>
-									</a>
+							<div class="block-projects--bot">
+								<div class="block-projects--title">
+									решения 
 								</div>
-								<div class="block-contacts--partner">
-									<div>
-										<img src="images/dest/frame.svg" alt="">
-									</div>
-									<div>
-										Патроны приюта <br>для животных <br> CENTAUR
-									</div>
-								</div>
-								<div class="block-contacts--phone">
-									<div>
-										<img src="images/dest/phone_icon.svg" alt="">
-									</div>
-									<div>
-										<a href="tel:+74996490952">+7 499 649 0952</a><br><a href="tel:+14155130267">+1 415 513 0267</a> 
-									</div>
-								</div>
-								<div class="block-contacts--email">
-									<div>
-										<img src="images/dest/mail_icon.svg" alt="">
-									</div>
-									<div>
-										<a href="mailto:info@osokins.com">info@osokins. <br>com</a>
-									</div>
-								</div>
-								<div class="block-contacts--social">
-									<a href="#"><img src="images/dest/fc.svg" alt=""></a>
-									<a href="#"><img src="images/dest/youtube.svg" alt=""></a>
-									<a href="#"><img src="images/dest/in.svg" alt=""></a>
+								<div class="block-projects--line line-2">
+									<div data-text="Управление проектом"></div>
+									<div data-text="Бизнес план"></div>
+									<div data-text="Бизнес процессы"></div>
+									<div data-text="Тендеры и контракты"></div>
+									<div data-text="Запуск операционной системы"></div>
+									<div data-text="IT Решения"></div>
 								</div>
 							</div>
-							<div class="block-contacts--right">
-								<img src="images/dest/logo-contacts.svg" class="mobile" alt="">
-								<img src="images/dest/logo-bot-desktop.svg" class="desktop" alt="">
-							</div>
 						</div>
-						<div class="block-copyright">
-							<div class="site-inner">
-								<div class="block-copyright--text">Copyright © 2021 OSOKINS Project Delivery</div>
-								All Rights Reserved
-							</div>
-						</div>
-					</div>		
+					</div>						
 				</div>
 			</div>
-		</div>
-	</div>
-	
+		</section>
+		<section class="fullpage-section" id="video">
+			<div class="block-main video">
+				<div class="block-video">
+					<div class="video-slider js-video-slider">
+						<div class="video-slider--item">
+							<div class="video-slider--youtube">
+								<span class="wrap-video">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/uoPBbjOEU4U?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<span class="img-video js-btn-video active">
+										<img src="images/dest/img-video-1.webp" alt="">
+									</span>
+								</span>
+							</div>
+							<div class="video-slider--text">
+								Отчетная сессия по запуску проекта ПИК Мебель
+							</div>
+						</div>
+						<div class="video-slider--item">
+							<div class="video-slider--youtube">
+								<span class="wrap-video">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/48ocjN4ROv4?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<span class="img-video js-btn-video active">
+										<img src="images/dest/img-video-2.webp" alt="">
+									</span>
+								</span>								
+							</div>
+							<div class="video-slider--text">
+								Отчетная сессия по запуску проекта ПИК Мебель
+							</div>
+						</div>
+						<div class="video-slider--item">
+							<div class="video-slider--youtube">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/Lm5eh5-RAzI?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="video-slider--text">
+								Отчетная сессия по запуску проекта ПИК Мебель
+							</div>
+						</div>
+						<div class="video-slider--item">
+							<div class="video-slider--youtube">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/7vblrrwqyH0?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="video-slider--text">
+								Отчетная сессия по запуску проекта ПИК Мебель
+							</div>
+						</div>
+					</div>
 
-	<div class="tab_content" id="contacts">
-		<div class="block-main contacts">
-			<div class="block-contacts site-inner">
-				<div class="block-contacts--left">
-					<div class="block-contacts--download">
-						<a href="#">
-							<span>
-								<img src="images/dest/ico-pdf.svg" alt="">
-							</span>
-							<span>
-								Скачать<br>презентацию
-							</span>
-						</a>
-					</div>
-					<div class="block-contacts--partner">
-						<div>
-							<img src="images/dest/frame.svg" alt="">
-						</div>
-						<div>
-							Патроны приюта <br>для животных <br> CENTAUR
-						</div>
-					</div>
-					<div class="block-contacts--phone">
-						<div>
-							<img src="images/dest/phone_icon.svg" alt="">
-						</div>
-						<div>
-							<a href="tel:+74996490952">+7 499 649 0952</a><br><a href="tel:+14155130267">+1 415 513 0267</a> 
-						</div>
-					</div>
-					<div class="block-contacts--email">
-						<div>
-							<img src="images/dest/mail_icon.svg" alt="">
-						</div>
-						<div>
-							<a href="mailto:info@osokins.com">info@osokins. <br>com</a>
-						</div>
-					</div>
-					<div class="block-contacts--social">
-						<a href="#"><img src="images/dest/fc.svg" alt=""></a>
-						<a href="#"><img src="images/dest/youtube.svg" alt=""></a>
-						<a href="#"><img src="images/dest/in.svg" alt=""></a>
-					</div>
-				</div>
-				<div class="block-contacts--right">
-					<img src="images/dest/logo-contacts.svg" class="mobile" alt="">
-					<img src="images/dest/logo-bot-desktop.svg" class="desktop" alt="">
 				</div>
 			</div>
-			<div class="block-copyright">
-				<div class="site-inner">
-					<div class="block-copyright--text">Copyright © 2021 OSOKINS Project Delivery</div>
-					All Rights Reserved
-				</div>
-			</div>
-		</div>		
-	</div>
+		</section>
+		<section class="fullpage-section team-section" id="team">
+			<div class="block-main command command-bg">
+				<div class="block-contact-1-mobile">
+					<div class="foto">
+						<div class="left">
+							<img src="images/dest/command-1.webp" alt="">
+						</div>
+						<div class="right">
+							<div class="name">
+								Роман <br>Осокин
+							</div>
+							<div class="job">
+								Управляющий партнер OSOKIN<span>S</span> Project Delivery
+							</div>
+						</div>
+					</div>
+					<div class="desk">
+						OSOKINS – это Osokin, <span style="color: #c00;">S</span>okolova и партнеры.
+	Мы предлагаем уникальный сервис: глубокая интеграция нашей экспертной команды в структуру Заказчика на период запуска проекта.
 
+					</div>
+				</div>
+				<div class="block-contact-1-mobile">
+					<div class="foto reverse">
+						<div class="left">
+							<img src="images/dest/command-2.webp" alt="">
+						</div>
+						<div class="right">
+							<div class="name">
+								Светлана <br>Соколова
+							</div>
+							<div class="job">
+								Старший партнер OSOKIN <span style="color: #c00;">S</span>Project Delivery
+							</div>
+						</div>
+					</div>
+					<div class="desk">
+						Мы – управленцы. Наш бизнес – не давать
+	советы как управлять проектами или повысить эффективность существующих организаций,
+	наш бизнес – запустить проект «с нуля», наладить операционную систему и передать Заказчику надежно работающий механизм.
+					</div>
+				</div>
+				<div class="block-contact-1">
+					<div class="block-contact-1--img">
+						<div class="img">
+							<img src="images/dest/command-1.webp" alt="">
+						</div>
+					</div>
+					<div class="block-contact-1--text">
+						<div class="block-contact-1--title">
+							Роман Осокин
+						</div>
+						<div class="block-contact-1--desk">
+							<p class="hello">
+								Привет. Я – Роман Осокин, управляющий <br> партнер OSOKIN<span style="color: #c00;">S</span>  Project Delivery
+							</p>
+							<p>
+								Больше 25 лет я управляю проектами, из них 17 лет в США. 
+							</p>
+							<p>		
+								OSOKINS – это Osokin, <span style="color: #c00;">S</span>okolova и партнеры. Мы предлагаем уникальный сервис: глубокая интеграция нашей экспертной команды в структуру Заказчика на период запуска проекта.
+							</p>		
+							<p>
+								Мы применяем подходы американской школы проектного менеджмента с учетом многолетнего опыта в России и СНГ.   <br>
+								Мой основной опыт: стройка и ритейл, но в последнее время OSOKINS всё больше предлагает решения для запуска новых бизнес направлений и новых продуктов в других индустриях.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</section>
+		<section class="fullpage-section team-section" id="team-1">
+			<div class="block-main command command-bg">
+				<div class="block-contact-1 block-contact-2">
+					<div class="block-contact-1--img">
+						<div class="img">
+							<img src="images/dest/command-2.webp" alt="">
+						</div>
+					</div>
+					<div class="block-contact-1--text">
+						<div class="block-contact-1--title">
+							Светлана Соколова
+						</div>
+						<div class="block-contact-1--desk">
+							<p class="hello">
+								Здравствуйте, меня зовут Светлана Соколова. Я – старший Партнер OSOKIN<span style="color: #c00;">S</span>
+							</p>
+							<p>
+								Мой экспертный опыт в финансовой оценке инвестиционной деятельности более 18 лет.
+							</p>
+							<p>		
+								Мы – управленцы. Наш бизнес – не давать советы
+		как управлять проектами или повысить эффективность существующих организаций, наш бизнес – запустить проект «с нуля», наладить операционную систему
+		и передать Заказчику надежно работающий механизм. Это может быть, как новый бизнес юнит, так и новый офис управления проектом. 
+							</p>		
+						</div>
+					</div>
+				</div>
+			</div>			
+		</section>
+		<section class="fullpage-section team-slider-section" id="team2">
+			<div class="block-main command">
+				<div class="block-command site-inner js-slider-command-mobile">
+					<div class="command">
+						<div class="command--img">
+							<img src="images/dest/img-1.webp" alt="">
+						</div>
+						<div class="command--title">
+							Полина Смушко
+						</div>
+						<div class="command--hint">
+							Проектный контролер
+						</div>
+					</div>
+					<div class="command">
+						<div class="command--img">
+							<img src="images/dest/img-2.webp" alt="">
+						</div>
+						<div class="command--title">
+							Демьян Кислинский
+						</div>
+						<div class="command--hint">
+							Лидер направления 
+						</div>
+					</div>
+					<div class="command">
+						<div class="command--img">
+							<img src="images/dest/img-3.webp" alt="">
+						</div>
+						<div class="command--title">
+							Анастасия Савинова
+						</div>
+						<div class="command--hint">
+							Проектный Контролер
+						</div>
+					</div>
+					<div class="command">
+						<div class="command--img">
+							<img src="images/dest/img-4.webp" alt="">
+						</div>
+						<div class="command--title">
+							Юрий Микула
+						</div>
+						<div class="command--hint">
+							Менеджер проекта
+						</div>
+					</div>
+					<div class="command">
+						<div class="command--img">
+							<img src="images/dest/img-5.webp" alt="">
+						</div>
+						<div class="command--title">
+							Юлия Тихомирова
+						</div>
+						<div class="command--hint">
+							Ведущий архитектор
+						</div>
+					</div>
+					<div class="command">
+						<div class="command--img">
+							<img src="images/dest/img-6.webp" alt="">
+						</div>
+						<div class="command--title">
+							Вазген Седракян
+						</div>
+						<div class="command--hint">
+							Лидер направления
+						</div>
+					</div>
+					<div class="command">
+						<div class="command--img">
+							<img src="images/dest/img-7.webp" alt="">
+						</div>
+						<div class="command--title">
+							Евгения Чулкова
+						</div>
+						<div class="command--hint">
+							Эксперт по коммунникациям
+						</div>
+					</div>
+					<div class="command">
+						<div class="command--img">
+							<img src="images/dest/img-8.webp" alt="">
+						</div>
+						<div class="command--title">
+							Марина Буина
+						</div>
+						<div class="command--hint">
+							Эксперт по планированию
+						</div>
+					</div>
+				</div>
+			</div>			
+		</section>
+		<section class="fullpage-section" id="contacts">
+			<div class="block-main contacts">
+				<div class="block-contacts site-inner">
+					<div class="block-contacts--left">
+						<div class="block-contacts--download">
+							<a href="#">
+								<span>
+									<img src="images/dest/ico-pdf.svg" alt="">
+								</span>
+								<span>
+									Скачать<br>презентацию
+								</span>
+							</a>
+						</div>
+						<div class="block-contacts--partner">
+							<div>
+								<img src="images/dest/frame.svg" alt="">
+							</div>
+							<div>
+								Патроны приюта <br>для животных <br> CENTAUR
+							</div>
+						</div>
+						<div class="block-contacts--phone">
+							<div>
+								<img src="images/dest/phone_icon.svg" alt="">
+							</div>
+							<div>
+								<a href="tel:+74996490952">+7 499 649 0952</a><br><a href="tel:+14155130267">+1 415 513 0267</a> 
+							</div>
+						</div>
+						<div class="block-contacts--email">
+							<div>
+								<img src="images/dest/mail_icon.svg" alt="">
+							</div>
+							<div>
+								<a href="mailto:info@osokins.com">info@osokins. <br>com</a>
+							</div>
+						</div>
+						<div class="block-contacts--social">
+							<a href="#"><img src="images/dest/fc.svg" alt=""></a>
+							<a href="#"><img src="images/dest/youtube.svg" alt=""></a>
+							<a href="#"><img src="images/dest/in.svg" alt=""></a>
+						</div>
+					</div>
+					<div class="block-contacts--right">
+						<img src="images/dest/logo-contacts.svg" class="mobile" alt="">
+						<img src="images/dest/logo-bot-desktop.svg" class="desktop" alt="">
+					</div>
+				</div>
+				<div class="block-copyright">
+					<div class="site-inner">
+						<div class="block-copyright--text">Copyright © 2021 OSOKINS Project Delivery</div>
+						All Rights Reserved
+					</div>
+				</div>
+			</div>	
+		</section>
+	</div>
 </div>
-
-
 
 <div id="nav-comanda">
 	<ul>
-		<li data-tag="#section0" class="nav-comanda-1 active"></li>
-		<li data-tag="#section1" class="nav-comanda-2"></li>
-		<li data-tag="#section2" class="nav-comanda-3"></li>
+		<li class="nav-comanda-1"></li>
+		<li class="nav-comanda-2"></li>
+		<li class="nav-comanda-3"></li>
 	</ul>
 </div>
 
