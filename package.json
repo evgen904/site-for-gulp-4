@@ -26,6 +26,8 @@
     "sass": "^1.38.2"
   },
   "dependencies": {
-    "gulp-scss": "^1.4.0"
+    "create-hmac": "^1.1.7",
+    "gulp-scss": "^1.4.0",
+    "imgproxyjs": "^1.6.0"
   }
 }

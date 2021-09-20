@@ -1,9 +1,12 @@
-.s3-animator {
+@media (min-width: 640px) {
+  .s3-animator {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-transform: translateZ(0); }
+}
+
 
 .s3-animator-hide {
   opacity: 0; }
@@ -24,9 +27,17 @@
   -webkit-animation-duration: 3s;
   animation-duration: 3s; }
 
-.s3-animator-d4 {
+@media (min-width: 640px) {
+  .s3-animator-d4 {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
+}
+
+
+
+
+
+
 
 .s3-animator-d5 {
   -webkit-animation-duration: 5s;
@@ -1568,9 +1579,15 @@
   50% {
     opacity: 1; } }
 
-.s3-animator-zoomIn {
+@media (min-width: 640px) {
+  .s3-animator-zoomIn {
   -webkit-animation-name: s3-animator-zoomIn;
   animation-name: s3-animator-zoomIn; }
+}
+
+
+
+
 
 @-webkit-keyframes s3-animator-zoomInDown {
   0% {

@@ -53,7 +53,11 @@ function scripts() {
 		'app/js/countup.min.js',
 		'app/js/s3.animator.js',
 		'app/js/jquery.easings.min.js',
-		'app/js/jquery.fullPage.js',
+		'app/js/fp.extensions.js',
+		'app/js/fp.scrollHorizontally.js',
+		'app/js/fullpage.fadingEffect.limited.js',
+		'app/js/fullpage.parallax.limited.min.js',
+		'app/js/scrolloverflow.js',
 		'app/js/jquery.slimscroll.min.js',
 		'app/js/app.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
 		])
@@ -89,6 +93,8 @@ function buildcopy() {
 	return src([ // Выбираем нужные файлы
 		'app/css/**/*.min.css',
 		'app/fonts/**/*',
+		'app/video/**/*',
+		'app/doc/**/*',
 		'app/js/**/*.min.js',
 		'app/images/dest/**/*',
 		'app/**/*.html',

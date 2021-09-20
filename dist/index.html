@@ -4,30 +4,29 @@
     <meta charset="utf-8">
     <title>Site title</title>
     <meta content="" name="description">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
 
     <link rel="stylesheet" href="css/app.min.css">
 </head>
 
 <body>
-
 <div class="site-wrap">
 	<header class="site-header">
 		<div class="site-header-inner site-inner">
 			<a class="js-main-slide" data-menuanchor="screen-hero" href="#screen-hero"><img src="images/dest/logo.svg" alt=""></a>
 			<nav class="js-menu-header">
 				<ul id="menu">
-					<li data-menuanchor="screen-services"><a href="#screen-services">Услуги</a></li>
-                    <li data-menuanchor="screen-projects"><a href="#screen-projects">Проекты</a></li>
-                    <li data-menuanchor="screen-video"><a href="#screen-video">новости</a></li>
-                    <li data-menuanchor="screen-team" class="link-1 comand-li"><a href="#screen-team">Команда</a></li>
-                    <li data-menuanchor="screen-team-1" class="link-2 hidden"><a href="#screen-team-1">Команда</a></li>
-                    <li data-menuanchor="screen-team-slider" class="link-3 hidden"><a href="#screen-team-slider">Команда</a></li>
-                    <li data-menuanchor="screen-contacts"><a href="#screen-contacts">Контакты</a></li>
+					<li data-menuanchor="screen-services"><a data-menuanchor="screen-services" href="#screen-services">Услуги</a></li>
+                    <li data-menuanchor="screen-projects"><a data-menuanchor="screen-projects" href="#screen-projects">Проекты</a></li>
+                    <li data-menuanchor="screen-video"><a data-menuanchor="screen-video" href="#screen-video">новости</a></li>
+                    <li data-menuanchor="screen-team" class="link-1 comand-li"><a data-menuanchor="screen-team" href="#screen-team">Команда</a></li>
+                    <li data-menuanchor="screen-team-1" class="link-2 hidden"><a data-menuanchor="screen-team-1" href="#screen-team-1">Команда</a></li>
+                    <li data-menuanchor="screen-team-slider" class="link-3 hidden"><a data-menuanchor="screen-team-slider" href="#screen-team-slider">Команда</a></li>
+                    <li data-menuanchor="screen-contacts"><a data-menuanchor="screen-contacts" href="#screen-contacts">Контакты</a></li>
 				</ul>
 			</nav>
-		</div>		
+		</div>  
 		<div class="btn-burger js-menu-header-btn">
 			<span>menu</span>
 		</div>
@@ -37,7 +36,7 @@
 		<section class="fullpage-section" id="hero">
 			<div class="block-main main">
 				<span class="main-img">
-					<img src="images/dest/command.webp" alt="" data-s3-animator="zoomIn d4">
+					<img src="images/dest/command.png" alt="" data-s3-animator="zoomIn d4">
 					<span class="about-site">
 						<span class="site-desk" data-s3-animator="fadeInLeft">
 							КОМАНДА ИНТЕРИМ-МЕНЕДЖЕРОВ <br>СДЕЛАЕТ ВАШ ПРОЕКТ УСПЕШНЫМ
@@ -86,18 +85,18 @@
 						развиваем территории
 					</div>
 					<div class="block-1--desk">
-							<ul>
-								<li>
-									Организация проектного офиса
-								</li>
-								<li>
-									Разработка концепции
-								</li>
-								<li>
-									Финансовое моделирование
-								</li>
-							</ul>
-						</div>
+						<ul>
+							<li>
+								Организация проектного офиса
+							</li>
+							<li>
+								Разработка концепции
+							</li>
+							<li>
+								Финансовое моделирование
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -111,7 +110,7 @@
 						</div>
 						<div>
 							<button class="prev js-prev-slide"></button>
-							<div class="counter js-counter-slide"></div>
+							<div class="counter"><span class="js-one-slide active">1</span> <span class="spacer">/</span> <span class="js-two-slide">2</span></div>
 							<button class="next js-next-slide"></button>
 						</div>					
 					</div>
@@ -124,10 +123,10 @@
 								<div class="block-projects--desk">
 									Ташкент, Узбекистан. Международный бизнес-центр. <br>
 			Проект развития территории в 80 га.<br>
-			Заказчик: Дирекция Tashkent City при Кабинете Министров Республики Узбекистан.
+			Заказчик: Дирекция Tashkent City при Кабинете <br> Министров Республики Узбекистан.
 								</div>
 								<div class="block-projects--link">
-									<a href="#">Благодарственное письмо</a>
+									<a href="doc/doc2.pdf" target="_blank">Благодарственное письмо</a>
 								</div>
 								<div class="block-projects--img bg-1">
 									<img src="images/dest/city-1.webp" alt="">
@@ -152,12 +151,16 @@
 								<div class="block-projects--name">
 									ПИК МЕБЕЛЬ
 								</div>
-								<div class="block-projects--desk">
+								<div class="block-projects--desk desk2">
 									Москва, Россия. <br>
 									Запуск бизнес направления<br>
-									по оснащению новых квартир мебелью и бытовой техникой.<br>
+									по оснащению новых квартир <br>
+									мебелью и бытовой техникой.<br>
 									Старт продаж состоялся в 2021г.<br>
 									Заказчик: ГК ПИК
+								</div>
+								<div class="block-projects--link">
+									<a href="doc/doc3.pdf" target="_blank">Благодарственное письмо</a>
 								</div>
 								<div class="block-projects--img bg-2"></div>
 							</div>
@@ -185,44 +188,80 @@
 					<div class="video-slider js-video-slider">
 						<div class="video-slider--item">
 							<div class="video-slider--youtube">
-								<span class="wrap-video">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/uoPBbjOEU4U?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									<span class="img-video js-btn-video active">
-										<img src="images/dest/img-video-1.webp" alt="">
-									</span>
-								</span>
+								<span class="wrap-video video">
+									<video controls="controls" poster="images/dest/poster-1.webp">
+									   <source src="video/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+									   Тег video не поддерживается вашим браузером. 
+									   <a href="video/video-1.mp4">Скачайте видео</a>.
+									</video>
+								</span>		
 							</div>
 							<div class="video-slider--text">
-								Отчетная сессия по запуску проекта ПИК Мебель
+								<a href="https://www.youtube.com/watch?v=uoPBbjOEU4U" target="_blank">Интерактивный обучающий тренинг по продукту</a>
 							</div>
 						</div>
 						<div class="video-slider--item">
 							<div class="video-slider--youtube">
-								<span class="wrap-video">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/48ocjN4ROv4?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<span class="wrap-video video">
+									<video controls="controls" poster="images/dest/poster-2.webp">
+									   <source src="video/video-2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+									   Тег video не поддерживается вашим браузером. 
+									   <a href="video/video-2.mp4">Скачайте видео</a>.
+									</video>
+								</span>								
+							</div>
+							<div class="video-slider--text">
+								<a href="https://www.youtube.com/watch?v=48ocjN4ROv4" target="_blank">Организация бизнес-процессов: монтаж и контроль качества</a>
+							</div>
+						</div>
+						<div class="video-slider--item">
+							<div class="video-slider--youtube">
+								<span class="wrap-video video">
+									<video controls="controls" poster="images/dest/img-video-1.webp">
+									   <source src="video/video-5.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+									   Тег video не поддерживается вашим браузером. 
+									   <a href="video/video-5.mp4">Скачайте видео</a>.
+									</video>
+									<span class="img-video js-btn-video active">
+										<img src="images/dest/img-video-1.webp" alt="">
+									</span>
+								</span>								
+							</div>
+							<div class="video-slider--text">
+								<a href="https://youtu.be/Mj8FM0WQmeU" target="_blank">Отчетная сессия по запуску проекта ПИК Мебель</a>
+							</div>
+						</div>
+						<div class="video-slider--item">
+							<div class="video-slider--youtube">
+								<span class="wrap-video video">
+									<video controls="controls" poster="images/dest/img-video-1.webp">
+									   <source src="video/video-4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+									   Тег video не поддерживается вашим браузером. 
+									   <a href="video/video-4.mp4">Скачайте видео</a>.
+									</video>
 									<span class="img-video js-btn-video active">
 										<img src="images/dest/img-video-2.webp" alt="">
 									</span>
 								</span>								
 							</div>
 							<div class="video-slider--text">
-								Отчетная сессия по запуску проекта ПИК Мебель
+								<a href="https://www.youtube.com/watch?v=7vblrrwqyH0" target="_blank">Как мы отметили год удаленки и запуск проекта</a>
 							</div>
-						</div>
+						</div>						
+						
+						
 						<div class="video-slider--item">
 							<div class="video-slider--youtube">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/Lm5eh5-RAzI?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<span class="wrap-video video">
+									<video controls="controls" poster="images/dest/poster-3.webp">
+									   <source src="video/video-3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+									   Тег video не поддерживается вашим браузером. 
+									   <a href="video/video-3.mp4">Скачайте видео</a>.
+									</video>
+								</span>								
 							</div>
 							<div class="video-slider--text">
-								Отчетная сессия по запуску проекта ПИК Мебель
-							</div>
-						</div>
-						<div class="video-slider--item">
-							<div class="video-slider--youtube">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/7vblrrwqyH0?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							</div>
-							<div class="video-slider--text">
-								Отчетная сессия по запуску проекта ПИК Мебель
+								<a href="https://www.youtube.com/watch?v=Lm5eh5-RAzI" target="_blank">Роман Осокин о ключевых сервисах OSOKIN<span style="color: #c00;">S</span></a>
 							</div>
 						</div>
 					</div>
@@ -235,14 +274,14 @@
 				<div class="block-contact-1-mobile">
 					<div class="foto">
 						<div class="left">
-							<img src="images/dest/command-1.webp" alt="">
+							<img src="images/dest/command-1.png" alt="">
 						</div>
 						<div class="right">
 							<div class="name">
 								Роман <br>Осокин
 							</div>
 							<div class="job">
-								Управляющий партнер OSOKIN<span>S</span> Project Delivery
+								Управляющий партнер OSOKIN<span style="color: #c00;">S</span> Project Delivery
 							</div>
 						</div>
 					</div>
@@ -255,14 +294,14 @@
 				<div class="block-contact-1-mobile">
 					<div class="foto reverse">
 						<div class="left">
-							<img src="images/dest/command-2.webp" alt="">
+							<img src="images/dest/command-2.png" alt="">
 						</div>
 						<div class="right">
 							<div class="name">
 								Светлана <br>Соколова
 							</div>
 							<div class="job">
-								Старший партнер OSOKIN <span style="color: #c00;">S</span>Project Delivery
+								Старший партнер OSOKIN<span style="color: #c00;">S</span> Project Delivery
 							</div>
 						</div>
 					</div>
@@ -275,7 +314,7 @@
 				<div class="block-contact-1">
 					<div class="block-contact-1--img">
 						<div class="img">
-							<img src="images/dest/command-1.webp" alt="">
+							<img src="images/dest/command-1.png" alt="">
 						</div>
 					</div>
 					<div class="block-contact-1--text">
@@ -289,10 +328,10 @@
 							<p>
 								Больше 25 лет я управляю проектами, из них 17 лет в США. 
 							</p>
-							<p>		
+							<p style="text-align: justify;">	
 								OSOKINS – это Osokin, <span style="color: #c00;">S</span>okolova и партнеры. Мы предлагаем уникальный сервис: глубокая интеграция нашей экспертной команды в структуру Заказчика на период запуска проекта.
 							</p>		
-							<p>
+							<p style="text-align: justify;">		
 								Мы применяем подходы американской школы проектного менеджмента с учетом многолетнего опыта в России и СНГ.   <br>
 								Мой основной опыт: стройка и ритейл, но в последнее время OSOKINS всё больше предлагает решения для запуска новых бизнес направлений и новых продуктов в других индустриях.
 							</p>
@@ -306,7 +345,7 @@
 				<div class="block-contact-1 block-contact-2">
 					<div class="block-contact-1--img">
 						<div class="img">
-							<img src="images/dest/command-2.webp" alt="">
+							<img src="images/dest/command-2.png" alt="">
 						</div>
 					</div>
 					<div class="block-contact-1--text">
@@ -315,12 +354,12 @@
 						</div>
 						<div class="block-contact-1--desk">
 							<p class="hello">
-								Здравствуйте, меня зовут Светлана Соколова. Я – старший Партнер OSOKIN<span style="color: #c00;">S</span>
+								Здравствуйте, меня зовут Светлана Соколова. <br>Я – старший Партнер OSOKIN<span style="color: #c00;">S</span>
 							</p>
 							<p>
 								Мой экспертный опыт в финансовой оценке инвестиционной деятельности более 18 лет.
 							</p>
-							<p>		
+							<p style="text-align: justify;">		
 								Мы – управленцы. Наш бизнес – не давать советы
 		как управлять проектами или повысить эффективность существующих организаций, наш бизнес – запустить проект «с нуля», наладить операционную систему
 		и передать Заказчику надежно работающий механизм. Это может быть, как новый бизнес юнит, так и новый офис управления проектом. 
@@ -329,8 +368,8 @@
 					</div>
 				</div>
 			</div>			
-		</section>
-		<section class="fullpage-section team-slider-section" id="team2">
+		</section>	
+		<section class="fullpage-section team-slider-section" id="team-slider">
 			<div class="block-main command">
 				<div class="block-command site-inner js-slider-command-mobile">
 					<div class="command">
@@ -429,7 +468,7 @@
 				<div class="block-contacts site-inner">
 					<div class="block-contacts--left">
 						<div class="block-contacts--download">
-							<a href="#">
+							<a href="doc/doc.pdf" download>
 								<span>
 									<img src="images/dest/ico-pdf.svg" alt="">
 								</span>
@@ -439,12 +478,14 @@
 							</a>
 						</div>
 						<div class="block-contacts--partner">
-							<div>
-								<img src="images/dest/frame.svg" alt="">
-							</div>
-							<div>
-								Патроны приюта <br>для животных <br> CENTAUR
-							</div>
+							<a href="https://centaur.im/" target="_blank">
+								<span>
+									<img src="images/dest/frame.svg" alt="">
+								</span>
+								<span>
+									Патроны приюта <br>для животных <br> CENTAUR
+								</span>
+							</a>							
 						</div>
 						<div class="block-contacts--phone">
 							<div>
@@ -459,13 +500,13 @@
 								<img src="images/dest/mail_icon.svg" alt="">
 							</div>
 							<div>
-								<a href="mailto:info@osokins.com">info@osokins. <br>com</a>
+								<a href="mailto:info@osokins.com">info@osokins.com</a>
 							</div>
 						</div>
 						<div class="block-contacts--social">
-							<a href="#"><img src="images/dest/fc.svg" alt=""></a>
-							<a href="#"><img src="images/dest/youtube.svg" alt=""></a>
-							<a href="#"><img src="images/dest/in.svg" alt=""></a>
+							<a href="https://www.facebook.com/osokinsprojectdelivery/" target="_blank"><img src="images/dest/fc.svg" alt=""></a>
+							<a href="https://www.youtube.com/channel/UC6iw7xGVRsVs8_AFSMO5jwg" target="_blank"><img src="images/dest/youtube.svg" alt=""></a>
+							<a href="https://www.linkedin.com/company/osokins-consulting" target="_blank"><img src="images/dest/in.svg" alt=""></a>
 						</div>
 					</div>
 					<div class="block-contacts--right">
@@ -491,7 +532,6 @@
 		<li class="nav-comanda-3"></li>
 	</ul>
 </div>
-
 
 <script src="js/app.min.js"></script>
 </body>
