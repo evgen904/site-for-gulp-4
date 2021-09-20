@@ -13,7 +13,7 @@ During development mode, run the default task so you'll have watchers and browse
 * Try to modify html, scss and javascript files and see how the page gets updated with BrowserSync
 
 When you're ready to deploy, simply do the following:
-* Run `gulp deploy`
+* Run `gulp deploy` or `gulp build`
 * All of the files you need will be in /dist with your images optimized, css compressed and js compressed
 
 ## Node Versions Supported
