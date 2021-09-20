@@ -75,6 +75,9 @@ $(function(){
 		$.fn.fullpage.moveTo(7);
 	});
 
+	$('.js-logo-slide').on('click', function() {
+		$.fn.fullpage.moveTo(1);
+	});
 
 
 
