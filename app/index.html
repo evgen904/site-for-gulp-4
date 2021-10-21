@@ -1,562 +1,303 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
-    <title>OSOKINS</title>
+    <title>Site</title>
     <meta content="" name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    <meta name="author" content="Разработка Digital-агентство WebReforma https://webreforma.ru" />
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-
     <link rel="stylesheet" href="css/app.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<div class="site-wrap">
-	<header class="site-header">
-		<div class="site-header-inner site-inner">
-			<span data-menuanchor="screen-hero" class="logo js-logo-slide">
-				<img loading="lazy" src="images/dest/logo.svg" alt="">
-			</span>
-			<nav class="js-menu-header">
-				<ul id="menu">
-					<li data-menuanchor="screen-services"><a data-menuanchor="screen-services" href="#screen-services">Услуги</a></li>
-                    <li data-menuanchor="screen-projects"><a data-menuanchor="screen-projects" href="#screen-projects">Проекты</a></li>
-                    <li data-menuanchor="screen-video"><a data-menuanchor="screen-video" href="#screen-video">новости</a></li>
-                    <li data-menuanchor="screen-team" class="link-1 comand-li"><a data-menuanchor="screen-team" href="#screen-team">Команда</a></li>
-                    <li data-menuanchor="screen-team-1" class="link-2 hidden"><a data-menuanchor="screen-team-1" href="#screen-team-1">Команда</a></li>
-                    <li data-menuanchor="screen-team-slider" class="link-3 hidden"><a data-menuanchor="screen-team-slider" href="#screen-team-slider">Команда</a></li>
-                    <li data-menuanchor="screen-contacts"><a data-menuanchor="screen-contacts" href="#screen-contacts">Контакты</a></li>
-				</ul>
-			</nav>
-		</div>  
-		<div class="btn-burger js-menu-header-btn">
-			<span>menu</span>
-		</div>
-	</header>
+    <div class="container">
+        <div class="reviews js-slider-reviews">
+            <div class="reviews--top">
+                <h2>Недавние отзывы</h2>
+                <a href="/votes">Все отзывы гостей</a>
+            </div>
+            <div class="reviews--slider js-slider-reviews-body">
+                <div class="slider js-slider-reviews-list">
+                    <div class="slider-preview js-slider-reviews-track">
+                        
+                        <div class="review js-slider-item">
+                            <div class="review--header">
+                                <div class="foto">
+                                    <img src="images/dest/avatar.webp" alt="" />
+                                </div>
+                                <div class="comment-user">
+                                    <div class="comment-user--name">
+                                        Иван Иванов 1
+                                    </div>
+                                    <div class="comment-user--city">
+                                        Санкт-Петербург
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review--body">
+                                Из минусов-только отсутствие микроволновки в одном из номеров. Номер с туалетом и душем за такие деньги (1500)-это просто находка.
+                            </div>
+                            <div class="review--footer">
+                                <div class="footer-row">
+                                	<div class="rating-wr">
+                                		<span class="rating-list__count">4,8</span>
+	                                	<span data-rating="4" class="rating-list">
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                    </span>
+                                	</div>
+                                    
+                                    <div class="date">
+                                        18 октября 2021 г.
+                                    </div>
+                                </div>
+                                <div class="footer-row">
+                                    <div class="is-foto">
+                                    </div>
+                                    <a href="#">
+                                        Читать отзыв
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-	<div id="home-fullpage">
-		<section class="fullpage-section" id="hero">
-			<div class="block-main main">
-				<span class="main-img">
-					<picture>
-						<source srcset="images/dest/command.webp" type="image/webp">
-						<img class="img-main" src="images/dest/command.png" alt="" data-s3-animator="zoomIn d4">
-					</picture>
-					<span class="about-site">
-						<span class="site-desk" data-s3-animator="fadeInLeft">
-							КОМАНДА ИНТЕРИМ-МЕНЕДЖЕРОВ <br>СДЕЛАЕТ ВАШ ПРОЕКТ УСПЕШНЫМ
-						</span>
-						<span class="site-logo" data-s3-animator="fadeInRight">
-							<img loading="lazy" src="images/dest/logo-main.svg" alt="">
-						</span>
-					</span>
-				</span>	
-			</div>		
-		</section>
-		<section class="fullpage-section" id="services">
-			<div class="block-main services">
-			<div class="site-inner">
-				<div class="block-1">
-					<div class="block-1--left">
-						<img loading="lazy" src="images/dest/shema.svg" alt="">
-					</div>
-					<div class="block-1--right">
-						<div class="block-1--title">
-							развиваем бизнесы 
-						</div>
-						<div class="block-1--desk">
-							<ul>
-								<li>
-									Запуск проектов
-								</li>
-								<li>
-									Внедрение  продуктов
-								</li>
-								<li>
-									Аудит проектов
-								</li>
-								<li>
-									Кризис-менеджмент
-								</li>
-								<li>
-									Управление изменениями
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="block-2">
-					<div class="block-1--title">
-						развиваем территории
-					</div>
-					<div class="block-1--desk">
-						<ul>
-							<li>
-								Организация проектного офиса
-							</li>
-							<li>
-								Разработка концепции
-							</li>
-							<li>
-								Финансовое моделирование
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		</section>
-		<section class="fullpage-section" id="projects">
-			<div class="block-main projects">
-				<div class="block-projects site-inner">
-					<div class="block-projects--nav">
-						<div>
-							Реализованные проекты
-						</div>
-						<div>
-							<button class="prev js-prev-slide"></button>
-							<div class="counter"><span class="js-one-slide active">1</span> <span class="spacer">/</span> <span class="js-two-slide">2</span></div>
-							<button class="next js-next-slide"></button>
-						</div>					
-					</div>
-					<div class="owl-carousel js-projects">
-						<div class="block-projects--slide">
-							<div class="block-projects--cen">
-								<div class="block-projects--name">
-									Tashkent City
-								</div>
-								<div class="block-projects--desk">
-									Ташкент, Узбекистан. Международный бизнес-центр. <br>
-			Проект развития территории в 80 га.<br>
-			Заказчик: Дирекция Tashkent City при Кабинете <br> Министров Республики Узбекистан.
-								</div>
-								<div class="block-projects--link">
-									<a href="doc/doc2.pdf" target="_blank">Благодарственное письмо</a>
-								</div>
-								<div class="block-projects--img bg-1">
-									<img loading="lazy" src="images/dest/city-1.webp" alt="">
-								</div>
-							</div>
-							<div class="block-projects--bot">
-								<div class="block-projects--title">
-									решения 
-								</div>
-								<div class="block-projects--line line-1">
-									<div data-text="Запуск проекта"></div>
-									<div data-text="Коммерческая концепция"></div>
-									<div data-text="Бизнес процессы"></div>
-									<div data-text="Тендеры и контракты"></div>
-									<div data-text="Инвестиционная программа"></div>
-									<div data-text="Обучение команды заказчика"></div>
-								</div>
-							</div>
-						</div>
-						<div class="block-projects--slide">
-							<div class="block-projects--cen">
-								<div class="block-projects--name">
-									ПИК МЕБЕЛЬ
-								</div>
-								<div class="block-projects--desk desk2">
-									Москва, Россия. <br>
-									Запуск бизнес направления<br>
-									по оснащению новых квартир <br>
-									мебелью и бытовой техникой.<br>
-									Старт продаж состоялся в 2021г.<br>
-									Заказчик: ГК ПИК
-								</div>
-								<div class="block-projects--link">
-									<a href="doc/doc3.pdf" target="_blank">Благодарственное письмо</a>
-								</div>
-								<div class="block-projects--img bg-2"></div>
-							</div>
-							<div class="block-projects--bot">
-								<div class="block-projects--title">
-									решения 
-								</div>
-								<div class="block-projects--line line-2">
-									<div data-text="Управление проектом"></div>
-									<div data-text="Бизнес план"></div>
-									<div data-text="Бизнес процессы"></div>
-									<div data-text="Тендеры и контракты"></div>
-									<div data-text="Запуск операционной системы"></div>
-									<div data-text="IT Решения"></div>
-								</div>
-							</div>
-						</div>
-					</div>						
-				</div>
-			</div>
-		</section>
-		<section class="fullpage-section" id="video">
-			<div class="block-main video">
-				<div class="block-video">
-					<div class="video-slider js-video-slider">
-						<div class="video-slider--item">
-							<div class="video-slider--youtube">
-								<span class="wrap-video video">
-									<video controls="controls" poster="images/dest/poster-1.webp">
-									   <source src="video/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-									   Тег video не поддерживается вашим браузером. 
-									   <a href="video/video-1.mp4">Скачайте видео</a>.
-									</video>
-								</span>		
-							</div>
-							<div class="video-slider--text">
-								<a href="https://www.youtube.com/watch?v=uoPBbjOEU4U" target="_blank">Интерактивный обучающий тренинг по продукту</a>
-							</div>
-						</div>
-						<div class="video-slider--item">
-							<div class="video-slider--youtube">
-								<span class="wrap-video video">
-									<video controls="controls" poster="images/dest/poster-2.webp">
-									   <source src="video/video-2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-									   Тег video не поддерживается вашим браузером. 
-									   <a href="video/video-2.mp4">Скачайте видео</a>.
-									</video>
-								</span>								
-							</div>
-							<div class="video-slider--text">
-								<a href="https://www.youtube.com/watch?v=48ocjN4ROv4" target="_blank">Организация бизнес-процессов: монтаж и контроль качества</a>
-							</div>
-						</div>
-						<div class="video-slider--item">
-							<div class="video-slider--youtube">
-								<span class="wrap-video video">
-									<video controls="controls" poster="images/dest/img-video-1.webp">
-									   <source src="video/video-5.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-									   Тег video не поддерживается вашим браузером. 
-									   <a href="video/video-5.mp4">Скачайте видео</a>.
-									</video>
-									<span class="img-video js-btn-video active">
-										<img loading="lazy" src="images/dest/img-video-1.webp" alt="">
-									</span>
-								</span>								
-							</div>
-							<div class="video-slider--text">
-								<a href="https://youtu.be/Mj8FM0WQmeU" target="_blank">Отчетная сессия по запуску проекта ПИК Мебель</a>
-							</div>
-						</div>
-						<div class="video-slider--item">
-							<div class="video-slider--youtube">
-								<span class="wrap-video video">
-									<video controls="controls" poster="images/dest/img-video-1.webp">
-									   <source src="video/video-4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-									   Тег video не поддерживается вашим браузером. 
-									   <a href="video/video-4.mp4">Скачайте видео</a>.
-									</video>
-									<span class="img-video js-btn-video active">
-										<img loading="lazy" src="images/dest/img-video-2.webp" alt="">
-									</span>
-								</span>								
-							</div>
-							<div class="video-slider--text">
-								<a href="https://www.youtube.com/watch?v=7vblrrwqyH0" target="_blank">Как мы отметили год удаленки и запуск проекта</a>
-							</div>
-						</div>						
-						
-						
-						<div class="video-slider--item">
-							<div class="video-slider--youtube">
-								<span class="wrap-video video">
-									<video controls="controls" poster="images/dest/poster-3.webp">
-									   <source src="video/video-3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-									   Тег video не поддерживается вашим браузером. 
-									   <a href="video/video-3.mp4">Скачайте видео</a>.
-									</video>
-								</span>								
-							</div>
-							<div class="video-slider--text">
-								<a href="https://www.youtube.com/watch?v=Lm5eh5-RAzI" target="_blank">Роман Осокин о ключевых сервисах OSOKIN<span style="color: #c00;">S</span></a>
-							</div>
-						</div>
-					</div>
+                        <div class="review js-slider-item">
+                            <div class="review--header">
+                                <div class="foto">
+                                    <img src="images/dest/avatar.webp" alt="" />
+                                </div>
+                                <div class="comment-user">
+                                    <div class="comment-user--name">
+                                        Иван Иванов 2
+                                    </div>
+                                    <div class="comment-user--city">
+                                        Санкт-Петербург
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review--body">
+                                Из минусов-только отсутствие микроволновки в одном из номеров. Номер с туалетом и душем за такие деньги (1500)-это просто находка.
+                            </div>
+                            <div class="review--footer">
+                                <div class="footer-row">
+                                	<div class="rating-wr">
+                                		<span class="rating-list__count">4,8</span>
+	                                	<span data-rating="4" class="rating-list">
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                    </span>
+                                	</div>
+                                    
+                                    <div class="date">
+                                        18 октября 2021 г.
+                                    </div>
+                                </div>
+                                <div class="footer-row">
+                                    <div class="is-foto">
+                                    </div>
+                                    <a href="#">
+                                        Читать отзыв
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-				</div>
-			</div>
-		</section>
-		<section class="fullpage-section team-section" id="team">
-			<div class="block-main command command-bg">
-				<div class="block-contact-1-mobile">
-					<div class="foto">
-						<div class="left">
-							<picture>
-								<source srcset="images/dest/command-1.webp" type="image/webp">
-								<img loading="lazy" src="images/dest/command-1.png" alt="">
-							</picture>
-						</div>
-						<div class="right">
-							<div class="name">
-								Роман <br>Осокин
-							</div>
-							<div class="job">
-								Управляющий партнер OSOKIN<span style="color: #c00;">S</span> Project Delivery
-							</div>
-						</div>
-					</div>
-					<div class="desk">
-						OSOKINS – это Osokin, <span style="color: #c00;">S</span>okolova и партнеры.
-	Мы предлагаем уникальный сервис: глубокая интеграция нашей экспертной команды в структуру Заказчика на период запуска проекта.
+                        <div class="review js-slider-item">
+                            <div class="review--header">
+                                <div class="foto">
+                                    <img src="images/dest/avatar.webp" alt="" />
+                                </div>
+                                <div class="comment-user">
+                                    <div class="comment-user--name">
+                                        Иван Иванов 3
+                                    </div>
+                                    <div class="comment-user--city">
+                                        Санкт-Петербург
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review--body">
+                                Из минусов-только отсутствие микроволновки в одном из номеров. Номер с туалетом и душем за такие деньги (1500)-это просто находка.
+                            </div>
+                            <div class="review--footer">
+                                <div class="footer-row">
+                                	<div class="rating-wr">
+                                		<span class="rating-list__count">4,8</span>
+	                                	<span data-rating="4" class="rating-list">
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                    </span>
+                                	</div>
+                                    
+                                    <div class="date">
+                                        18 октября 2021 г.
+                                    </div>
+                                </div>
+                                <div class="footer-row">
+                                    <div class="is-foto">
+                                    </div>
+                                    <a href="#">
+                                        Читать отзыв
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-					</div>
-				</div>
-				<div class="block-contact-1-mobile">
-					<div class="foto reverse">
-						<div class="left">
-							​<picture>
-								<source srcset="images/dest/command-2.webp" type="image/webp">
-								<img loading="lazy" src="images/dest/command-2.png" alt="">
-							</picture>
-						</div>
-						<div class="right">
-							<div class="name">
-								Светлана <br>Соколова
-							</div>
-							<div class="job">
-								Старший партнер OSOKIN<span style="color: #c00;">S</span> Project Delivery
-							</div>
-						</div>
-					</div>
-					<div class="desk">
-						Мы – управленцы. Наш бизнес – не давать
-	советы как управлять проектами или повысить эффективность существующих организаций,
-	наш бизнес – запустить проект «с нуля», наладить операционную систему и передать Заказчику надежно работающий механизм.
-					</div>
-				</div>
-				<div class="block-contact-1">
-					<div class="block-contact-1--img">
-						<div class="img">
-							<picture>
-								<source srcset="images/dest/command-1.webp" type="image/webp">
-								<img loading="lazy" src="images/dest/command-1.png" alt="">
-							</picture>
-						</div>
-					</div>
-					<div class="block-contact-1--text">
-						<div class="block-contact-1--title">
-							Роман Осокин
-						</div>
-						<div class="block-contact-1--desk">
-							<p class="hello">
-								Привет. Я – Роман Осокин, управляющий <br> партнер OSOKIN<span style="color: #c00;">S</span>  Project Delivery
-							</p>
-							<p>
-								Больше 25 лет я управляю проектами, из них 17 лет в США. 
-							</p>
-							<p style="text-align: justify;">	
-								OSOKINS – это Osokin, <span style="color: #c00;">S</span>okolova и партнеры. Мы предлагаем уникальный сервис: глубокая интеграция нашей экспертной команды в структуру Заказчика на период запуска проекта.
-							</p>		
-							<p style="text-align: justify;">		
-								Мы применяем подходы американской школы проектного менеджмента с учетом многолетнего опыта в России и СНГ.   <br>
-								Мой основной опыт: стройка и ритейл, но в последнее время OSOKINS всё больше предлагает решения для запуска новых бизнес направлений и новых продуктов в других индустриях.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>			
-		</section>
-		<section class="fullpage-section team-section" id="team-1">
-			<div class="block-main command command-bg">
-				<div class="block-contact-1 block-contact-2">
-					<div class="block-contact-1--img">
-						<div class="img">
-							<picture>
-								<source srcset="images/dest/command-2.webp" type="image/webp">
-								<img loading="lazy" src="images/dest/command-2.png" alt="">
-							</picture>
-						</div>
-					</div>
-					<div class="block-contact-1--text">
-						<div class="block-contact-1--title">
-							Светлана Соколова
-						</div>
-						<div class="block-contact-1--desk">
-							<p class="hello">
-								Здравствуйте, меня зовут Светлана Соколова. <br>Я – старший Партнер OSOKIN<span style="color: #c00;">S</span>
-							</p>
-							<p>
-								Мой экспертный опыт в финансовой оценке инвестиционной деятельности более 18 лет.
-							</p>
-							<p style="text-align: justify;">		
-								Мы – управленцы. Наш бизнес – не давать советы
-		как управлять проектами или повысить эффективность существующих организаций, наш бизнес – запустить проект «с нуля», наладить операционную систему
-		и передать Заказчику надежно работающий механизм. Это может быть, как новый бизнес юнит, так и новый офис управления проектом. 
-							</p>		
-						</div>
-					</div>
-				</div>
-			</div>			
-		</section>	
-		<section class="fullpage-section team-slider-section" id="team-slider">
-			<div class="block-main command">
-				<div class="block-command site-inner js-slider-command-mobile">
-					<div class="command">
-						<div class="command--img">
-							<img loading="lazy" src="images/dest/img-1.webp" alt="">
-						</div>
-						<div class="command--title">
-							Полина Смушко
-						</div>
-						<div class="command--hint">
-							Проектный контролер
-						</div>
-					</div>
-					<div class="command">
-						<div class="command--img">
-							<img loading="lazy" src="images/dest/img-2.webp" alt="">
-						</div>
-						<div class="command--title">
-							Демьян Кислинский
-						</div>
-						<div class="command--hint">
-							Лидер направления 
-						</div>
-					</div>
-					<div class="command">
-						<div class="command--img">
-							<img loading="lazy" src="images/dest/img-3.webp" alt="">
-						</div>
-						<div class="command--title">
-							Анастасия Савинова
-						</div>
-						<div class="command--hint">
-							Проектный Контролер
-						</div>
-					</div>
-					<div class="command">
-						<div class="command--img">
-							<img loading="lazy" src="images/dest/img-4.webp" alt="">
-						</div>
-						<div class="command--title">
-							Юрий Микула
-						</div>
-						<div class="command--hint">
-							Менеджер проекта
-						</div>
-					</div>
-					<div class="command">
-						<div class="command--img">
-							<img loading="lazy" src="images/dest/img-5.webp" alt="">
-						</div>
-						<div class="command--title">
-							Юлия Тихомирова
-						</div>
-						<div class="command--hint">
-							Ведущий архитектор
-						</div>
-					</div>
-					<div class="command">
-						<div class="command--img">
-							<img loading="lazy" src="images/dest/img-6.webp" alt="">
-						</div>
-						<div class="command--title">
-							Вазген Седракян
-						</div>
-						<div class="command--hint">
-							Лидер направления
-						</div>
-					</div>
-					<div class="command">
-						<div class="command--img">
-							<img loading="lazy" src="images/dest/img-7.webp" alt="">
-						</div>
-						<div class="command--title">
-							Евгения Чулкова
-						</div>
-						<div class="command--hint">
-							Эксперт по коммунникациям
-						</div>
-					</div>
-					<div class="command">
-						<div class="command--img">
-							<img loading="lazy" src="images/dest/img-8.webp" alt="">
-						</div>
-						<div class="command--title">
-							Марина Буина
-						</div>
-						<div class="command--hint">
-							Эксперт по планированию
-						</div>
-					</div>
-				</div>
-			</div>			
-		</section>
-		<section class="fullpage-section" id="contacts">
-			<div class="block-main contacts">
-				<div class="block-contacts site-inner">
-					<div class="block-contacts--left">
-						<div class="block-contacts--download">
-							<a href="doc/doc.pdf" download>
-								<span>
-									<img loading="lazy" src="images/dest/ico-pdf.svg" alt="">
-								</span>
-								<span>
-									Скачать<br>презентацию
-								</span>
-							</a>
-						</div>
-						<div class="block-contacts--partner">
-							<a href="https://centaur.im/" target="_blank">
-								<span>
-									<img loading="lazy" src="images/dest/frame.svg" alt="">
-								</span>
-								<span>
-									Патроны приюта <br>для животных <br> CENTAUR
-								</span>
-							</a>							
-						</div>
-						<div class="block-contacts--phone">
-							<div>
-								<img loading="lazy" src="images/dest/phone_icon.svg" alt="">
-							</div>
-							<div>
-								<div class="hide-desktop">
-									<a href="tel:+74996490952">+7 499 649 0952</a><br><a href="tel:+14155130267">+1 415 513 0267</a> 
-								</div>
-								<div class="hide-mobile">
-									<span>+7 499 649 0952</span><br><span>+1 415 513 0267</span> 
-								</div>
-							</div>
-						</div>
-						<div class="block-contacts--email">
-							<div>
-								<img loading="lazy" src="images/dest/mail_icon.svg" alt="">
-							</div>
-							<div>
-								<a class="hide-desktop" href="mailto:info@osokins.com">info@osokins.com</a>
-								<span class="hide-mobile">info@osokins.com</span>
-							</div>
-						</div>
-						<div class="block-contacts--social">
-							<a href="https://www.facebook.com/osokinsprojectdelivery/" target="_blank"><img loading="lazy" src="images/dest/fc.svg" alt=""></a>
-							<a href="https://www.youtube.com/channel/UC6iw7xGVRsVs8_AFSMO5jwg" target="_blank"><img loading="lazy" src="images/dest/youtube.svg" alt=""></a>
-							<a href="https://www.linkedin.com/company/osokins-consulting" target="_blank"><img loading="lazy" src="images/dest/in.svg" alt=""></a>
-						</div>
-					</div>
-					<div class="block-contacts--right">
-						<img loading="lazy" src="images/dest/logo-contacts.svg" class="mobile" alt="">
-						<img loading="lazy" src="images/dest/logo-bot-desktop.svg" class="desktop" alt="">
-					</div>
-				</div>
-				<div class="block-copyright">
-					<div class="site-inner">
-						<div class="block-copyright--text">Copyright © 2021 OSOKINS Project Delivery</div>
-						All Rights Reserved
-					</div>
-				</div>
-			</div>	
-		</section>
-	</div>
-</div>
+                        <div class="review js-slider-item">
+                            <div class="review--header">
+                                <div class="foto">
+                                    <img src="images/dest/avatar.webp" alt="" />
+                                </div>
+                                <div class="comment-user">
+                                    <div class="comment-user--name">
+                                        Иван Иванов 4
+                                    </div>
+                                    <div class="comment-user--city">
+                                        Санкт-Петербург
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review--body">
+                                Из минусов-только отсутствие микроволновки в одном из номеров. Номер с туалетом и душем за такие деньги (1500)-это просто находка.
+                            </div>
+                            <div class="review--footer">
+                                <div class="footer-row">
+                                	<div class="rating-wr">
+                                		<span class="rating-list__count">4,8</span>
+	                                	<span data-rating="4" class="rating-list">
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                    </span>
+                                	</div>
+                                    
+                                    <div class="date">
+                                        18 октября 2021 г.
+                                    </div>
+                                </div>
+                                <div class="footer-row">
+                                    <div class="is-foto">
+                                    </div>
+                                    <a href="#">
+                                        Читать отзыв
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-<div id="nav-comanda">
-	<ul>
-		<li class="nav-comanda-1"></li>
-		<li class="nav-comanda-2"></li>
-		<li class="nav-comanda-3"></li>
-	</ul>
-</div>
+                        <div class="review js-slider-item">
+                            <div class="review--header">
+                                <div class="foto">
+                                    <img src="images/dest/avatar.webp" alt="" />
+                                </div>
+                                <div class="comment-user">
+                                    <div class="comment-user--name">
+                                        Иван Иванов 5
+                                    </div>
+                                    <div class="comment-user--city">
+                                        Санкт-Петербург
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review--body">
+                                Из минусов-только отсутствие микроволновки в одном из номеров. Номер с туалетом и душем за такие деньги (1500)-это просто находка.
+                            </div>
+                            <div class="review--footer">
+                                <div class="footer-row">
+                                	<div class="rating-wr">
+                                		<span class="rating-list__count">4,8</span>
+	                                	<span data-rating="4" class="rating-list">
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                    </span>
+                                	</div>
+                                    
+                                    <div class="date">
+                                        18 октября 2021 г.
+                                    </div>
+                                </div>
+                                <div class="footer-row">
+                                    <div class="is-foto">
+                                    </div>
+                                    <a href="#">
+                                        Читать отзыв
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-<script src="js/app.min.js"></script>
+                        <div class="review js-slider-item">
+                            <div class="review--header">
+                                <div class="foto">
+                                    <img src="images/dest/avatar.webp" alt="" />
+                                </div>
+                                <div class="comment-user">
+                                    <div class="comment-user--name">
+                                        Иван Иванов 6
+                                    </div>
+                                    <div class="comment-user--city">
+                                        Санкт-Петербург
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review--body">
+                                Из минусов-только отсутствие микроволновки в одном из номеров. Номер с туалетом и душем за такие деньги (1500)-это просто находка.
+                            </div>
+                            <div class="review--footer">
+                                <div class="footer-row">
+                                	<div class="rating-wr">
+                                		<span class="rating-list__count">4,8</span>
+	                                	<span data-rating="4" class="rating-list">
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                        <span class="icon-app-star"></span>
+	                                    </span>
+                                	</div>
+                                    
+                                    <div class="date">
+                                        18 октября 2021 г.
+                                    </div>
+                                </div>
+                                <div class="footer-row">
+                                    <div class="is-foto">
+                                    </div>
+                                    <a href="#">
+                                        Читать отзыв
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="reviews--slider-btn js-slider-reviews-nav">
+                <button class="prev js-slider-reviews-prev"></button>
+                <div class="dots js-slider-reviews-dots"></div>
+                <button class="next js-slider-reviews-next"></button>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.min.js"></script>
 </body>
+
 </html>

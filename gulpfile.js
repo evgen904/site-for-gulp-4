@@ -46,19 +46,19 @@ function browsersync() {
 
 function scripts() {
 	return src([ // Берём файлы из источников
-		'app/js/jquery-1.10.2.min.js',
-		'app/js/owl.carousel.min.js',
-		'app/js/owl.animate.js',
-		'app/js/slick.min.js',
-		'app/js/countup.min.js',
-		'app/js/s3.animator.js',
-		'app/js/jquery.easings.min.js',
-		'app/js/fp.extensions.js',
-		'app/js/fp.scrollHorizontally.js',
-		'app/js/fullpage.fadingEffect.limited.js',
-		'app/js/fullpage.parallax.limited.min.js',
-		'app/js/scrolloverflow.js',
-		'app/js/jquery.slimscroll.min.js',
+		// 'app/js/jquery-1.10.2.min.js',
+		// 'app/js/owl.carousel.min.js',
+		// 'app/js/owl.animate.js',
+		// 'app/js/slick.min.js',
+		// 'app/js/countup.min.js',
+		// 'app/js/s3.animator.js',
+		// 'app/js/jquery.easings.min.js',
+		// 'app/js/fp.extensions.js',
+		// 'app/js/fp.scrollHorizontally.js',
+		// 'app/js/fullpage.fadingEffect.limited.js',
+		// 'app/js/fullpage.parallax.limited.min.js',
+		// 'app/js/scrolloverflow.js',
+		// 'app/js/jquery.slimscroll.min.js',
 		'app/js/app.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
 		])
 	.pipe(concat('app.min.js')) // Конкатенируем в один файл
