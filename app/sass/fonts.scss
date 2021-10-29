@@ -435,3 +435,78 @@
     background-repeat: no-repeat;
   }
 }
+
+
+
+
+/* типографика на проде ее нет поэтому на проде закоменчено */
+.tmp-font--large {
+    font-size: 40px;
+    line-height: normal;
+    font-weight: bold;
+    letter-spacing: -1.14px;
+}
+.tmp-font--big {
+    font-size: 22px;
+    line-height: normal;
+    font-weight: normal;
+}
+.tmp-font--big_bold {
+    font-size: 22px;
+    line-height: normal;
+    font-weight: bold;
+    color: #000;
+}
+.tmp-font--average {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: normal;
+}
+.tmp-font--average_bold {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 500;
+}
+.tmp-font--average_big_bold {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: bold;
+}
+.tmp-font--medium {
+    font-size: 14px;
+    line-height: normal;
+    font-weight: normal;
+}
+.tmp-font--medium_bold {
+    font-size: 14px;
+    line-height: normal;
+    font-weight: bold;
+}
+.tmp-font--medium_gray {
+    font-size: 14px;
+    line-height: normal;
+    font-weight: normal;
+    color: #7f7f7f;
+}
+.tmp-font--small {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: normal;
+}
+.tmp-font--small_bold {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: bold;
+}
+.tmp-font--super-small {
+    font-size: 9px;
+    line-height: normal;
+    font-weight: normal;
+    color: #cb0703;
+}
+.tmp-font--link {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: normal;
+    color: #2d6cb4;
+}
